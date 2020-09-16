@@ -10,7 +10,10 @@ const Footer = () => {
             <MDBCol>
               <span className="mr-5 align-text-center">Connect with me!</span>
               <span>LinkedIn: </span>
-              <a href="https://linkedin.com/in/rodrigpoma" className="mr-5">
+              <a
+                href="https://www.linkedin.com/in/rodrigopoma/"
+                className="mr-5"
+              >
                 <MDBIcon fab icon="linkedin" className="white-text" size="lg" />
               </a>
               <span>Github: </span>
