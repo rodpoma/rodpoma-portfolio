@@ -12,7 +12,7 @@ import WynIt from "./assets/WynIt.JPG";
 
 const Projects = () => {
   return (
-    <MDBContainer fluid className="projects">
+    <MDBContainer className="projects" fluid>
       <MDBMedia>
         <MDBMedia>
           <MDBAnimation type="fadeInLeft" delay=".3s">

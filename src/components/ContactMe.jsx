@@ -28,10 +28,7 @@ const FormPage = () => {
     }
   };
   return (
-    <MDBContainer
-      className="justify-content-center mt-5 align-items-center"
-      style={{}}
-    >
+    <MDBContainer className="cards">
       <MDBAnimation type="fadeInDown" delay=".3s">
         <MDBCard>
           <MDBCardBody>
