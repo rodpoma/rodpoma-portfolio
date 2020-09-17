@@ -20,3 +20,14 @@ code {
   left: 0;
   width: 100%;
 }
+
+.projects {
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  margin-top: 180px;
+}

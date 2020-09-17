@@ -6,6 +6,7 @@ import {
   MDBInput,
   MDBCard,
   MDBCardBody,
+  MDBAnimation,
 } from "mdbreact";
 import axios from "axios";
 
@@ -31,56 +32,58 @@ const FormPage = () => {
       className="justify-content-center mt-5 align-items-center"
       style={{}}
     >
-      <MDBCard>
-        <MDBCardBody>
-          <form>
-            <p className="h5 text-center mb-4 blue-text">Contact Me!</p>
-            <div className="grey-text">
-              <MDBInput
-                label="Your name"
-                icon="user"
-                name="name"
-                group
-                type="text"
-                validate
-                onChange={handleChange}
-              />
-              <MDBInput
-                label="Your email"
-                icon="envelope"
-                name="email"
-                group
-                type="email"
-                validate
-                onChange={handleChange}
-              />
-              <MDBInput
-                label="Subject"
-                icon="tag"
-                name="subject"
-                group
-                type="text"
-                validate
-                onChange={handleChange}
-              />
-              <MDBInput
-                type="textarea"
-                name="message"
-                rows="2"
-                label="Your message"
-                icon="pencil-alt"
-                onChange={handleChange}
-              />
-            </div>
-            <div className="text-center">
-              <MDBBtn outline color="secondary" onClick={handleSubmit}>
-                Send
-                <MDBIcon far icon="paper-plane" className="ml-1" />
-              </MDBBtn>
-            </div>
-          </form>
-        </MDBCardBody>
-      </MDBCard>
+      <MDBAnimation type="fadeInDown" delay=".3s">
+        <MDBCard>
+          <MDBCardBody>
+            <form>
+              <p className="h5 text-center mb-4 blue-text">Contact Me!</p>
+              <div className="grey-text">
+                <MDBInput
+                  label="Your name"
+                  icon="user"
+                  name="name"
+                  group
+                  type="text"
+                  validate
+                  onChange={handleChange}
+                />
+                <MDBInput
+                  label="Your email"
+                  icon="envelope"
+                  name="email"
+                  group
+                  type="email"
+                  validate
+                  onChange={handleChange}
+                />
+                <MDBInput
+                  label="Subject"
+                  icon="tag"
+                  name="subject"
+                  group
+                  type="text"
+                  validate
+                  onChange={handleChange}
+                />
+                <MDBInput
+                  type="textarea"
+                  name="message"
+                  rows="2"
+                  label="Your message"
+                  icon="pencil-alt"
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="text-center">
+                <MDBBtn outline color="secondary" onClick={handleSubmit}>
+                  Send
+                  <MDBIcon far icon="paper-plane" className="ml-1" />
+                </MDBBtn>
+              </div>
+            </form>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBAnimation>
     </MDBContainer>
   );
 };
