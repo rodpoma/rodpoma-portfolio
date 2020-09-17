@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  margin: 0;
 }
 
 code {
@@ -29,5 +31,18 @@ code {
 }
 
 .cards {
-  margin-top: 180px;
+  margin-top: 8%;
+}
+
+#videobackground .view video {
+  top: 0 !important;
+  left: 0 !important;
+  transform: none !important;
+}
+
+#videobackground {
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }

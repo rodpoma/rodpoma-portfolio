@@ -17,10 +17,10 @@ const AboutMe = () => {
           <MDBAnimation type="fadeInLeft" delay=".3s">
             <MDBCard
               className="card-image"
-              style={{
-                backgroundImage:
-                  "url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg')",
-              }}
+              // style={{
+              //   backgroundImage:
+              //     "url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg')",
+              // }}
             >
               <div
                 className="text-white text-center d-flex align-items-center rgba-black-strong py-5"
