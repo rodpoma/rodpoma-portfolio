@@ -9,7 +9,7 @@ import {
   MDBView,
   MDBMask,
 } from "mdbreact";
-import PWL from "./assets/Portfolio website logo.png";
+import PWL from "./assets/Portfolio website logo INIT.png";
 
 const Navbar = () => {
   return (
