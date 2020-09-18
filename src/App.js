@@ -14,6 +14,7 @@ import "mdbreact/dist/css/mdb.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Water from "./components/assets/Water.mp4";
+require("dotenv").config();
 
 const App = () => {
   return (

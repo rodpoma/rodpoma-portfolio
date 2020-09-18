@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
   MDBContainer,
   MDBBtn,
@@ -8,50 +8,54 @@ import {
   MDBCardBody,
   MDBAnimation,
 } from "mdbreact";
-import axios from "axios";
+import emailjs from "emailjs-com";
 
 const FormPage = () => {
-  const [formData, setFormData] = useState("");
-
-  const handleChange = e => {
-    setFormData({...formData, [e.target.name]: e.target.value});
-  };
-
-  const handleSubmit = async e => {
+  function sendEmail(e) {
     e.preventDefault();
-    try {
-      await axios.post("/api/users", formData);
-      alert("message sent");
-      this.resetForm();
-    } catch (error) {
-      alert(error);
-    }
-  };
+
+    emailjs
+      .sendForm(
+        `${process.env.REACT_APP_EMAILJS_SERVICE}`,
+        `${process.env.REACT_APP_EMAILJS_TEMPLATE}`,
+        e.target,
+        `${process.env.REACT_APP_EMAILJS_USER}`
+      )
+      .then(
+        result => {
+          console.log(result.text);
+          alert("email sent!");
+        },
+        error => {
+          console.log(error.text);
+          alert("something went wrong!");
+        }
+      );
+  }
+
   return (
     <MDBContainer className="cards">
       <MDBAnimation type="fadeInDown" delay=".3s">
         <MDBCard>
           <MDBCardBody className="rgba-grey-light">
-            <form>
+            <form onSubmit={sendEmail}>
               <p className="h5 text-center mb-4 pink-text">Contact Me!</p>
               <div className="pink-text">
                 <MDBInput
                   label="Your name"
                   icon="user"
-                  name="name"
+                  name="user_name"
                   group
                   type="text"
                   validate
-                  onChange={handleChange}
                 />
                 <MDBInput
                   label="Your email"
                   icon="envelope"
-                  name="email"
+                  name="user_email"
                   group
                   type="email"
                   validate
-                  onChange={handleChange}
                 />
                 <MDBInput
                   label="Subject"
@@ -60,7 +64,6 @@ const FormPage = () => {
                   group
                   type="text"
                   validate
-                  onChange={handleChange}
                 />
                 <MDBInput
                   type="textarea"
@@ -68,11 +71,10 @@ const FormPage = () => {
                   rows="2"
                   label="Your message"
                   icon="pencil-alt"
-                  onChange={handleChange}
                 />
               </div>
               <div className="text-center">
-                <MDBBtn outline color="secondary" onClick={handleSubmit}>
+                <MDBBtn outline color="secondary" type="submit">
                   Send
                   <MDBIcon far icon="paper-plane" className="ml-1" />
                 </MDBBtn>
