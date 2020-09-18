@@ -31,10 +31,10 @@ const FormPage = () => {
     <MDBContainer className="cards">
       <MDBAnimation type="fadeInDown" delay=".3s">
         <MDBCard>
-          <MDBCardBody>
+          <MDBCardBody className="rgba-grey-light">
             <form>
-              <p className="h5 text-center mb-4 blue-text">Contact Me!</p>
-              <div className="grey-text">
+              <p className="h5 text-center mb-4 pink-text">Contact Me!</p>
+              <div className="pink-text">
                 <MDBInput
                   label="Your name"
                   icon="user"
