@@ -14,6 +14,7 @@ const NavBarMobile = () => {
       <MDBNavbarBrand href="/" className="ml-5">
         <img src={PWL} alt="" height="30" />
       </MDBNavbarBrand>
+
       {/* <MDBNavItem>
         <MDBNavLink to="/about">
           <MDBIcon icon="user-astronaut" className="white-text" />
@@ -29,6 +30,7 @@ const NavBarMobile = () => {
           <MDBIcon icon="code" className="white-text" />
         </MDBNavLink>
       </MDBNavItem> */}
+
       <MDBNavItem>
         <MDBNavLink to="/contact">
           <MDBIcon icon="envelope" className="white-text" />
