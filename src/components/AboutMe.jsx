@@ -18,7 +18,7 @@ const AboutMe = () => {
             <MDBCard className="card-image">
               <div
                 className="text-white text-center d-flex align-items-center rgba-black-strong py-lg-5"
-                style={{height: "500px"}}
+                style={{width: "100%", height: "auto"}}
               >
                 <div className="align-text-center">
                   <h5 className="pink-text">
