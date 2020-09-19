@@ -3,11 +3,13 @@ import AboutMe from "./components/AboutMe.jsx";
 import ContactMe from "./components/ContactMe.jsx";
 import Landing from "./components/Landing.jsx";
 import NavBar from "./components/NavBar.jsx";
+import NavBarMobile from "./components/NavBarMobile.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
 import {MDBContainer, MDBView} from "mdbreact";
 import {BrowserRouter, Route} from "react-router-dom";
+import MediaQuery from "react-responsive";
 
 import "./App.css";
 import "mdbreact/dist/css/mdb.css";
@@ -20,7 +22,13 @@ require("dotenv").config();
 const App = () => {
   return (
     <BrowserRouter>
-      <NavBar />
+      <MediaQuery maxDeviceWidth={1200}>
+        <NavBarMobile />
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={1201}>
+        <NavBar />
+      </MediaQuery>
+
       <MDBContainer id="videobackground" fluid>
         <MDBView>
           <video
