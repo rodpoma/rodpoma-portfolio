@@ -9,7 +9,7 @@ import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
 import {MDBContainer, MDBView} from "mdbreact";
 import {BrowserRouter, Route} from "react-router-dom";
-import {useMediaQuery} from "react-responsive";
+import MediaQuery from "react-responsive";
 
 import "./App.css";
 import "mdbreact/dist/css/mdb.css";
@@ -20,10 +20,14 @@ import Water from "./components/assets/Water.mp4";
 require("dotenv").config();
 
 const App = () => {
-  const mobile = useMediaQuery({maxDeviceHeight: 1200});
   return (
     <BrowserRouter>
-      {mobile ? <NavBarMobile /> : <NavBar />}
+      <MediaQuery maxDeviceWidth={1200}>
+        <NavBarMobile />
+      </MediaQuery>
+      <MediaQuery minDeviceWidth={1201}>
+        <NavBar />
+      </MediaQuery>
 
       <MDBContainer id="videobackground" fluid>
         <MDBView>
