@@ -13,7 +13,8 @@ import "./App.css";
 import "mdbreact/dist/css/mdb.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import MHI from "./components/assets/MIAMI_HEAT_VICE_WAVE_INTRO[youtubetomp4.org].mp4";
+// import MHI from "./components/assets/MIAMI_HEAT_VICE_WAVE_INTRO[youtubetomp4.org].mp4";
+import Water from "./components/assets/Water.mp4";
 require("dotenv").config();
 
 const App = () => {
@@ -35,7 +36,7 @@ const App = () => {
               left: 0,
             }}
           >
-            <source src={MHI} type="video/mp4" />
+            <source src={Water} type="video/mp4" />
           </video>
           <Route path="/" exact component={Landing} />
           <Route path="/about" component={AboutMe} />

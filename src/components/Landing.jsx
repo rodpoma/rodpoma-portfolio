@@ -8,7 +8,7 @@ const Landing = () => {
     <MDBContainer className="cards" fluid>
       <MDBCol className="pink-text text-center mt-5">
         <MDBAnimation type="bounceInLeft" delay=".7s" className="flex-center">
-          <img src={PWL} alt="" height="200" />
+          <img src={PWL} alt="" className="logo" />
         </MDBAnimation>
         <hr className="hr-light my-4 w-75" />
         <MDBAnimation type="bounceInRight" delay=".7s">

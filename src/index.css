@@ -23,13 +23,6 @@ code {
   width: 100%;
 }
 
-.projects {
-  margin-top: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #videobackground .view video {
   top: 0 !important;
   left: 0 !important;
@@ -44,26 +37,40 @@ code {
 }
 
 /*Maximum with query*/
-@media screen and (min-width: 1025px) {
-  .cards {
-    margin-top: 8%;
-  }
+
+.cards {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  max-width: 1200px;
+  height: auto;
+  width: 100%;
+}
+.projects {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
-  .cards {
-    margin-top: 7%;
-  }
+.icon-link {
+  color: white;
+  margin-right: 50px;
 }
 
-@media screen and (min-width: 641px) and (max-width: 800px) {
-  .cards {
-    margin-top: 6%;
-  }
+.mobileNav {
+  display: none;
 }
 
-@media screen and (max-width: 640px) {
-  .cards {
-    margin-top: 5%;
-  }
+/** Mobile **/
+@media only screen and (max-width: 767px),
+  only screen and (max-device-width: 767px) {
 }
