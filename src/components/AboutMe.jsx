@@ -15,15 +15,9 @@ const AboutMe = () => {
       <MDBRow>
         <MDBCol>
           <MDBAnimation type="fadeInLeft" delay=".3s">
-            <MDBCard
-              className="card-image"
-              // style={{
-              //   backgroundImage:
-              //     "url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg')",
-              // }}
-            >
+            <MDBCard className="card-image">
               <div
-                className="text-white text-center d-flex align-items-center rgba-black-strong py-5"
+                className="text-white text-center d-flex align-items-center rgba-black-strong py-lg-5"
                 style={{height: "500px"}}
               >
                 <div className="align-text-center">
