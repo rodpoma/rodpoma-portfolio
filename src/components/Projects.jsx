@@ -22,7 +22,7 @@ const Projects = () => {
                   object
                   src={AR}
                   alt="Generic placeholder image"
-                  className="mr-5"
+                  className="mr-5 ml-5"
                   style={{
                     width: "100%",
                     height: "auto",
@@ -54,7 +54,7 @@ const Projects = () => {
                   object
                   src={WynIt}
                   alt="Generic placeholder image"
-                  className="ml-5"
+                  className="mr-5 ml-5"
                   style={{
                     width: "100%",
                     height: "auto",
