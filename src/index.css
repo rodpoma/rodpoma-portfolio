@@ -30,10 +30,6 @@ code {
   align-items: center;
 }
 
-.cards {
-  margin-top: 8%;
-}
-
 #videobackground .view video {
   top: 0 !important;
   left: 0 !important;
@@ -45,4 +41,29 @@ code {
   align-items: center;
   height: 50%;
   width: 100%;
+}
+
+/*Maximum with query*/
+@media screen and (min-width: 1025px) {
+  .cards {
+    margin-top: 8%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .cards {
+    margin-top: 7%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  .cards {
+    margin-top: 6%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cards {
+    margin-top: 5%;
+  }
 }

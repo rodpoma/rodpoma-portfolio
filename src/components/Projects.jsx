@@ -22,8 +22,11 @@ const Projects = () => {
                   object
                   src={AR}
                   alt="Generic placeholder image"
-                  height="400"
                   className="mr-5"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
                 />
                 <MDBMask className="flex-center">
                   <MDBBtn
@@ -51,8 +54,11 @@ const Projects = () => {
                   object
                   src={WynIt}
                   alt="Generic placeholder image"
-                  height="400"
                   className="ml-5"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
                 />
                 <MDBMask className="flex-center">
                   <MDBBtn gradient="blue" href="https://wynit.herokuapp.com/">
