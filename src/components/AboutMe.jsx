@@ -36,10 +36,10 @@ const AboutMe = () => {
                       Architecture. I then went on to work for Plaza
                       Construction where i was able to fulfill my dreams of
                       being integrated with the fields of building. Hungry for a
-                      new frontier, as well as given an oppurtunity from Covid,
-                      i pursued my new career in Full Stack Web Development.
-                      This has allowed me to employ my design-related and
-                      functional problem solving abilities in a whole new world.
+                      new frontier, as well as given an oppurtunity by Covid, i
+                      pursued my new career in Full Stack Web Development. This
+                      has allowed me to employ my design-related and functional
+                      problem solving abilities in a whole new world.
                     </p>
                     <p style={{margin: "0 10% 0 10%"}}>
                       Although i have shifted into the world of software, my
@@ -67,22 +67,10 @@ const AboutMe = () => {
                   went on to work for Plaza Construction where i was able to
                   fulfill my dreams of being integrated with the fields of
                   building. Hungry for a new frontier, as well as given an
-                  oppurtunity from Covid, i pursued my new career in Full Stack
+                  oppurtunity by Covid, i pursued my new career in Full Stack
                   Web Development. This has allowed me to employ my
                   design-related and functional problem solving abilities in a
                   whole new world.
-                </p>
-              </MDBAnimation>
-              <MDBAnimation type="fadeInLeft" delay=".9s">
-                <p
-                  className="white-text text-center"
-                  style={{margin: "0 10% 0 10%"}}
-                >
-                  Although i have shifted into the world of software, my love
-                  for graphical and physical design and construction burns as
-                  bright as ever. I love to wood work in my garage, draw
-                  anything and everything i can think of, and am constantly
-                  creating graphic art using adobe illustrator.
                 </p>
               </MDBAnimation>
             </MediaQuery>
