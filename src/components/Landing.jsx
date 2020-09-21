@@ -1,7 +1,7 @@
 import React from "react";
 import {MDBCol, MDBIcon, MDBBtn, MDBContainer, MDBAnimation} from "mdbreact";
 import PWL from "./assets/Portfolio website logo.png";
-import Resume from "./assets/Rodrigo Poma Resume- ATS 09_2020.pdf";
+import Resume from "./assets/Vanity Resume Current.pdf";
 
 const Landing = () => {
   return (
