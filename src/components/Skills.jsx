@@ -67,7 +67,6 @@ const Skills = () => {
                         <li>CSS</li>
                         <li>React.JS</li>
                         <li>JavaScript</li>
-                        <li>AutoCad</li>
                         <li>MDBReact</li>
                         <li>Bootstrap</li>
                       </ul>
@@ -122,39 +121,38 @@ const Skills = () => {
           </p>
         </MDBAnimation>
 
-        <p className="white-text" style={{margin: "0 10% 0 10%"}}>
-          <div className="justify-content-center align-items-center">
-            <MDBAnimation type="fadeInLeft" delay=".6s">
-              <strong>Design:</strong>
-              <ul>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe InDesign</li>
-                <li>Rhino 5</li>
-                <li>AutoCad</li>
-              </ul>
-            </MDBAnimation>
-            <MDBAnimation type="fadeInLeft" delay=".9s">
-              <strong>Front-End:</strong>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React.JS</li>
-                <li>JavaScript</li>
-                <li>AutoCad</li>
-                <li>MDBReact</li>
-                <li>Bootstrap</li>
-              </ul>
-            </MDBAnimation>
-            <MDBAnimation type="fadeInLeft" delay="1.2s">
-              <strong>Back-End:</strong>
-              <ul>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-              </ul>
-            </MDBAnimation>
+        <p className="white-text" style={{margin: "10% 10% 0 10%"}}>
+          <div className="flex-center align-items-start">
+            <MDBContainer>
+              <MDBAnimation type="fadeInLeft" delay=".6s">
+                <strong>Design:</strong>
+                <p>Adobe-Illustrator</p>
+                <p>Adobe-Photoshop</p>
+                <p>Adobe-InDesign</p>
+                <p>Rhino 5</p>
+                <p>AutoCad</p>
+              </MDBAnimation>
+            </MDBContainer>
+            <MDBContainer>
+              <MDBAnimation type="fadeInLeft" delay=".9s">
+                <strong>FrontEnd:</strong>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>React.JS</p>
+                <p>JavaScript</p>
+                <p>MDBReact</p>
+                <p>Bootstrap</p>
+              </MDBAnimation>
+            </MDBContainer>
+            <MDBContainer>
+              <MDBAnimation type="fadeInLeft" delay="1.2s">
+                <strong>BackEnd:</strong>
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>MongoDB</p>
+                <p>Mongoose</p>
+              </MDBAnimation>
+            </MDBContainer>
           </div>
         </p>
       </MediaQuery>
