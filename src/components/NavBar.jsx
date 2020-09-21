@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -8,16 +8,10 @@ import {
   MDBIcon,
   MDBView,
   MDBMask,
-  MDBHamburgerToggler,
-  MDBCollapse,
 } from "mdbreact";
 import PWL from "./assets/Portfolio website logo INIT.png";
 
 const Navbar = () => {
-  const [burger, setBurger] = useState(false);
-  const toggleBurger = () => {
-    setBurger(!burger);
-  };
   return (
     <MDBNavbar color="blue-gradient" dark expand="md">
       <MDBNavbarBrand href="/" className="ml-5">
@@ -64,21 +58,6 @@ const Navbar = () => {
             </MDBNavLink>
           </MDBNavItem>
         </MDBView>
-
-        <MDBHamburgerToggler className="mobileNav" onClick={toggleBurger} />
-        <MDBCollapse isOpen={burger === true}>
-          <MDBNavbarNav left>
-            <MDBNavItem active>
-              <MDBNavLink to="#!">Home</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Link</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem>
-              <MDBNavLink to="#!">Profile</MDBNavLink>
-            </MDBNavItem>
-          </MDBNavbarNav>
-        </MDBCollapse>
       </MDBNavbarNav>
     </MDBNavbar>
   );

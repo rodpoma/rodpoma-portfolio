@@ -4,6 +4,7 @@ import ContactMe from "./components/ContactMe.jsx";
 import Landing from "./components/Landing.jsx";
 import NavBar from "./components/NavBar.jsx";
 import NavBarMobile from "./components/NavBarMobile.jsx";
+import MobileMenu from "./components/MobileMenu.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Footer from "./components/Footer.jsx";
@@ -15,7 +16,6 @@ import "./App.css";
 import "mdbreact/dist/css/mdb.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-// import MHI from "./components/assets/MIAMI_HEAT_VICE_WAVE_INTRO[youtubetomp4.org].mp4";
 import Water from "./components/assets/Water.mp4";
 require("dotenv").config();
 
@@ -28,7 +28,6 @@ const App = () => {
       <MediaQuery minDeviceWidth={1201}>
         <NavBar />
       </MediaQuery>
-
       <MDBContainer id="videobackground" fluid>
         <MDBView>
           <video
@@ -51,6 +50,7 @@ const App = () => {
           <Route path="/skills" component={Skills} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={ContactMe} />
+          <Route path="/mobileMenu" component={MobileMenu} />
         </MDBView>
       </MDBContainer>
       <Footer />

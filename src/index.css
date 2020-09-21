@@ -55,6 +55,7 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .icon-hover {
   display: flex;
   justify-content: center;
@@ -66,8 +67,15 @@ code {
   margin-right: 50px;
 }
 
-.mobileNav {
-  display: none;
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /** Mobile **/
