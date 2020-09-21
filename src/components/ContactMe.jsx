@@ -9,6 +9,7 @@ import {
   MDBAnimation,
 } from "mdbreact";
 import emailjs from "emailjs-com";
+import swal from "sweetalert";
 
 const FormPage = () => {
   function sendEmail(e) {
@@ -24,11 +25,11 @@ const FormPage = () => {
       .then(
         result => {
           console.log(result.text);
-          alert("email sent!");
+          swal("email sent!");
         },
         error => {
           console.log(error.text);
-          alert("something went wrong!");
+          swal("something went wrong!");
         }
       );
   }
