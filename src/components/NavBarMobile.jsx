@@ -10,7 +10,7 @@ import PWL from "./assets/Portfolio website logo INIT.png";
 
 const NavBarMobile = () => {
   return (
-    <MDBNavbar color="blue-gradient" dark expand="md" className="nav">
+    <MDBNavbar color="blue-gradient" dark expand="md" className="nav" fixed="top">
       <MDBNavbarBrand href="/">
         <img src={PWL} alt="" height="30" />
       </MDBNavbarBrand>
